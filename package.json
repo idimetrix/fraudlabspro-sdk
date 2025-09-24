@@ -1,6 +1,6 @@
 {
   "name": "fraudlabspro-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "fraudlabspro-sdk is a software development kit (SDK) that provides easy integration with the FraudLabs Pro API for fraud detection.",
   "license": "MIT",
   "author": {
@@ -37,7 +37,20 @@
   "bugs": {
     "url": "https://github.com/idimetrix/fraudlabspro-sdk/issues"
   },
-  "keywords": [],
+  "keywords": [
+    "fraudlabs",
+    "fraudlabspro",
+    "fraud-detection",
+    "fraud-prevention",
+    "api",
+    "sdk",
+    "typescript",
+    "security",
+    "ecommerce",
+    "payment-fraud",
+    "identity-verification",
+    "ip-geolocation"
+  ],
   "files": [
     "dist",
     "docs",
@@ -54,22 +67,30 @@
       "import": "./dist/index.mjs"
     }
   },
-  "dependencies": {
-    "react": "18.3.1",
-    "typedoc": "0.26.7",
-    "typedoc-plugin-markdown": "4.2.8"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/jest": "29.5.13",
-    "@types/node": "22.7.2",
-    "husky": "9.1.6",
-    "jest": "29.7.0",
-    "lint-staged": "15.2.10",
-    "nodemon": "3.1.7",
-    "prettier": "3.3.3",
-    "ts-jest": "29.2.5",
-    "ts-node": "10.9.2",
-    "tsup": "8.3.0",
-    "typescript": "5.6.2"
+    "@types/jest": "^29.5.13",
+    "@types/node": "^22.7.2",
+    "husky": "^9.1.6",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.2.10",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2",
+    "typedoc": "^0.28.13",
+    "typedoc-plugin-markdown": "^4.9.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
